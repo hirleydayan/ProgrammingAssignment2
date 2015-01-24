@@ -19,7 +19,6 @@ makeCacheMatrix <- function(x = matrix()) {
              getsolve = getsolve)
 }
 
-
 #' This function computes the inverse of the \code{matrix} returned by 
 #' \code{makeCacheMatrix} function. If the inverse has already been 
 #' calculated, and the matrix has not changed, it should retrieve the 
