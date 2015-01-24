@@ -1,3 +1,4 @@
+#' 
 #' This function creates a \code{matrix} object that can cache its 
 #' inverse through \code{solve} function.
 #' 
@@ -5,6 +6,7 @@
 #' 
 #' @examples
 #' m <- makeCacheMatrix(replicate(3, rnorm(3)))
+#' 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
         set <- function(y) {
@@ -19,6 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
              getsolve = getsolve)
 }
 
+#' 
 #' This function computes the inverse of the \code{matrix} returned by 
 #' \code{makeCacheMatrix} function. If the inverse has already been 
 #' calculated, and the matrix has not changed, it should retrieve the 
@@ -30,6 +33,7 @@ makeCacheMatrix <- function(x = matrix()) {
 #' 
 #' @examples 
 #' cacheSolve(m)
+#' 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         m <- x$getsolve()
