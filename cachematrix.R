@@ -25,7 +25,7 @@ makeCacheMatrix <- function(x = matrix()) {
 #' inverse from the cache.
 #' 
 #' @param x An inversible matrix.
-#' @return The calculate the inverse of a \code{matrix} or retrieve it 
+#' @return The calculated inverse of a \code{matrix} or retrieve it 
 #' from  cache if it has already been calculated.
 #' 
 #' @examples 
