@@ -19,14 +19,14 @@ makeCacheMatrix <- function(x = matrix()) {
              getsolve = getsolve)
 }
 
-
 #' This function computes the inverse of the \code{matrix} returned by 
 #' \code{makeCacheMatrix} function. If the inverse has already been 
 #' calculated, and the matrix has not changed, it should retrieve the 
 #' inverse from the cache.
 #' 
 #' @param x An inversible matrix.
-#' @return The inverse of a \code{matrix}.
+#' @return The calculate the inverse of a \code{matrix} or retrieve it 
+#' from  cache if it has already been calculated.
 #' 
 #' @examples 
 #' cacheSolve(m)
